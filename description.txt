@@ -1,0 +1,8 @@
+Better Extractinator is a vanilla tweak mod.
+
+This mod lets you modify the speed of extractinator and the amount of blocks it will take per single use.
+
+Keep in mind, that while speed modification will apply to any item including from other mods, the amount of blocks used per single use of extractinator will only apply to silt, slush and desert fossil.
+
+Our discord
+https://discord.com/invite/SVfQ4EVzGy
