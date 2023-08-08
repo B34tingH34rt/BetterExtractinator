@@ -25,6 +25,7 @@ namespace BetterExtractinator
 {
     internal class TweakExtractinator : GlobalItem
     {
+		/*
         public void extUse(int inputItemID, ref int outputItemID, ref int outputStackSize)
         {
 			int num = 5000;
@@ -327,6 +328,8 @@ namespace BetterExtractinator
 			outputItemID = num5;
 			outputStackSize = num6;
 		}
+		*/
+		/*
         public override bool? UseItem(Item item, Player player)
         {
             Vector2 mousePosition = Main.MouseWorld;
@@ -396,6 +399,7 @@ namespace BetterExtractinator
             }
             return base.UseItem(item, player);
         }
+		*/
         public override float UseSpeedMultiplier(Item item, Player player)
         {
 			Vector2 mousePosition = Main.MouseWorld;
@@ -403,7 +407,7 @@ namespace BetterExtractinator
 			int tileY = (int)(mousePosition.Y / 16f);
 			Tile cursorTile = Main.tile[tileX, tileY];
 
-			if (cursorTile.TileType == TileID.Extractinator && player.cursorItemIconEnabled)
+			if (cursorTile.TileType == TileID.Extractinator || cursorTile.TileType == TileID.ChlorophyteExtractinator && player.cursorItemIconEnabled)
 			{
 				return base.UseSpeedMultiplier(item, player) * ModContent.GetInstance<ModConfigsai>().ExSpeeed;
 			}

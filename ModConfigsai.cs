@@ -20,11 +20,13 @@ namespace BetterExtractinator
 		[Label("Extractinator Speed Multiplier")]
 		public float ExSpeeed;
 
+		/*
 		[Range(1f, 50f)]
 		[Increment(1f)]
 		[DefaultValue(1f)]
 		[Slider]
 		[Label("Amount of Items Used Per Use of Extractinator")]
 		public float BlockAmount;
+		*/
 	}
 }
